@@ -1,0 +1,57 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name='author' content='Arthur Sicard et Benjamin Binard'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <title>SCBN's Galerie</title>
+  <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type='text/css' href="css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" type='text/css' href="css/index.css"/>
+</head>
+<body>
+
+  <div class='page-header container'>
+    <h1>SCBN's Galerie<small>petit texte à coté</small></h1>
+  </div>
+
+  <div id='galerie_photo' class='container'>
+    <div class='photo_compress'>
+      <img src='image_compress/image_1.jpg' width='256'></img>
+    </div>
+    <div class='photo_compress'>
+      <img src='image_compress/image_1.jpg' width='256'></img>
+    </div>
+    <div class='photo_compress'>
+      <img src='image_compress/image_1.jpg' width='256'></img>
+    </div>
+    <div class='photo_compress'>
+      <img src='image_compress/image_1.jpg' width='256'></img>
+    </div>
+    <div class='photo_compress'>
+      <img src='image_compress/image_1.jpg' width='256'></img>
+    </div>
+  </div>
+
+  <div id='agrandissement_photo' class='container'>
+    <div id='photo_reel'>
+      <h3>The moving castle</h3>
+      <img src='image_reelle/image_1.jpg'></img>
+    </div>
+    <div class="panel-body">
+      <textarea id="commentaire" class="form-control" rows="5" id="comment" readonly></textarea>
+      <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon1">Message > </span>
+        <input id="comm-message" type="text" class="form-control" placeholder="Entrez votre message" aria-describedby="sizing-addon1">
+      </div>
+      <button id="comm-send" type="button" class="btn btn-primary pull-right" onclick="sendMessage()">
+        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+        Envoyer
+      </button>
+    </div>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
